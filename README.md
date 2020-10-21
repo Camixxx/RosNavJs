@@ -43,6 +43,7 @@ roslaunch turtlebot_stage turtlebot_in_stage.launch
 
 `rosrun robot_pose_publisher robot_pose_publisher`
 
+<div align=center>![turtlebot](https://github.com/Camixxx/RosNavJs/blob/main/img/roslaunch1cmd.png?raw=true))](https://github.com/Camixxx/RosNavJs/blob/main/img/roslaunch1cmd.png?raw=true)
 
 # Run PR2
 
@@ -54,11 +55,15 @@ roslaunch turtlebot_stage turtlebot_in_stage.launch
 
 # Example
 
-open example/demo.html
+open public/example/demo.html
 
 <!-- Turtlebot -->
 <script src="../src/index.js"></script>
 <!-- Pr2 -->
-<!-- <script src="../src/index_pr2.js"></script> -->
+<script src="../src/index_pr2.js"></script>
+
+<div align=center>![example]([http:...](https://img-blog.csdnimg.cn/20200908154040341.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTMwMTMwMjM=,size_16,color_FFFFFF,t_70#pic_center))
 
 
+1. Double click to set the Goal.
+2. Use WASD to control the robot.
