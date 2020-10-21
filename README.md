@@ -70,7 +70,7 @@ Pr2:
 
 <script src="../src/index_pr2.js"></script>
 
-![example](https://img-blog.csdnimg.cn/20200908154040341.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTMwMTMwMjM=,size_16,color_FFFFFF,t_70#pic_center)
+![example](https://img-blog.csdnimg.cn/20200908154040341.png)
 
 
 1. Double click to set the Goal.
