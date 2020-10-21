@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<!-- IE将使用最新的引擎渲染网页 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 页面的宽度与设备屏幕的宽度一致
+      初始缩放比例 1:1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- 第三方库 -->
+<script src="../lib/easeljs.js"></script>
+<script src="../lib/eventemitter2.js"></script>
+<script src="../lib/roslib.js"></script>
+<script src="../lib/ros2d.js"></script>
+
+<!-- 重构图形库 -->
+<script src="../src/RosCanvas.js"></script>
+<script src="../src/shape/goalPoint.js"></script>
+<script src="../src/shape/pointCloud.js"></script> 
+<script src="../src/shape/NavigationArrow.js"></script> 
+
+<!-- Nav相关操作重构 -->
+<script src="../src/Nav.js"></script>
+<script src="../src/nav/ClientNav.js"></script>
+<script src="../src/nav/Navigator.js"></script>
+<script src="../src/nav/NavController.js"></script>
+
+<!-- SCAN 重构地图 -->
+<script src="../src/Scan.js"></script>
+
+<!-- demo对应js脚本 -->
+<!-- Turtlebot -->
+<script src="../src/index.js"></script>
+<!-- Pr2 -->
+<!-- <script src="../src/index_pr2.js"></script> -->
+
+<style>
+  .container{
+    padding: 10px 60px;
+    flex-wrap: nowrap!important;
+  }
+  .panel{
+    float: left;
+    width: 55%;
+  }
+  .display{
+    float: left;
+    width: 40%;
+  }
+
+  
+  table thead{
+    font-weight: 200;
+  }
+  .table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  .table td{
+    max-width: 240px;
+    max-height: 60px;
+    overflow-y: hidden;
+    vertical-align:middle;
+  }
+  td.topic_value{
+    max-width: 400px;
+  }
+  
+  .connected_state {
+    color:#00D600;
+  }
+  .error_state {
+    color:#FF0000;
+  }
+  #nav{
+    position: absolute;
+    width: 640px;
+    height: 640px;
+    overflow: scroll;
+  }
+
+</style>
+</head>
+
+<body onload="init()">
+  <h1 style="text-align: center;">Nav2d Example</h1>
+
+  <div class="container">
+
+    <div class="display">
+      <h4>Map</h4>  
+      <div id="nav"></div>
+
+      <div id="statusIndicator">
+        <h4>Status</h4>  
+        <span id="rosStatus">
+       
+        </span>
+      </div>
+      <div>
+        <div id="controller_show_div">
+          
+        </div>
+      </div>
+
+    </div>
+    <!-- display end -->
+    
+    <div class="panel">
+      <h4>Topic</h4> 
+      <div class="topic_tabl" id="show_all">
+
+      </div>
+
+    </div>
+    <!-- panel end -->
+
+  </div> 
+  <!-- container end -->
+</body>
+</html>
